@@ -7,11 +7,11 @@ import {
   CheckboxAgCellRendererComponent,
   LinkAgCellRendererComponent,
   ThumbnailAgCellRendererComponent
-} from '../components/grid/cell-renderers';
-import { CheckboxAgHeaderRendererComponent } from '../components/grid/cell-headers';
-import { SelectionButtonComponent, TotalRecordsComponent, SelectedRecordsComponent } from '../components/grid/side-bar';
-import { GridComponent } from '../components/grid/grid.component';
-import { CheckboxComponent } from '../components/common/checkbox/checkbox.component';
+} from '../GridModule/grid/cell-renderers';
+import { CheckboxAgHeaderRendererComponent } from '../GridModule/grid/cell-headers';
+import { SelectionButtonComponent, TotalRecordsComponent, SelectedRecordsComponent } from '../GridModule/grid/side-bar';
+import { GridComponent } from '../GridModule/grid/grid.component';
+import { CheckboxComponent } from '../GridModule/common/checkbox/checkbox.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 

@@ -5,23 +5,24 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { GridComponent } from './components/grid/grid.component';
+import { GridComponent } from './GridModule/grid/grid.component';
+import { ErrPageComponent } from './PageNotFoundModule/err-page.component';
 import {
   LinkAgCellRendererComponent,
   DateAgCellRendererComponent,
   TextAgCellRendererComponent,
   ThumbnailAgCellRendererComponent,
   CheckboxAgCellRendererComponent
-} from './components/grid/cell-renderers';
+} from './GridModule/grid/cell-renderers';
 import {
   CheckboxAgHeaderRendererComponent
-} from './components/grid/cell-headers';
-import { CheckboxComponent } from './components/common/checkbox/checkbox.component';
+} from './GridModule/grid/cell-headers';
+import { CheckboxComponent } from './GridModule/common/checkbox/checkbox.component';
 import {
   SelectionButtonComponent,
   SelectedRecordsComponent,
   TotalRecordsComponent
-} from './components/grid/side-bar';
+} from './GridModule/grid/side-bar';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {
     CheckboxComponent,
     SelectionButtonComponent,
     TotalRecordsComponent,
-    SelectedRecordsComponent
+    SelectedRecordsComponent,
+    ErrPageComponent
   ],
   imports: [
     HttpClientModule,

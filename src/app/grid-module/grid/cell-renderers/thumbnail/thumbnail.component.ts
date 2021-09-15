@@ -10,7 +10,7 @@ import { ICellRendererParams } from '@ag-grid-community/core';
 export class ThumbnailAgCellRendererComponent implements ICellRendererAngularComp {
   url: string;
 
-  agInit(params: ICellRendererParams) : void {
+  agInit(params: ICellRendererParams): void {
     this.url = params.value;
   }
   refresh(): boolean {

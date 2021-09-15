@@ -1,9 +1,9 @@
 import { Mapper } from './mapper';
 import { ItemModel } from '../models/item.model';
-import { videoObject } from './videoObject';
+import { VideoObject } from './video.object';
 
 export class VideoMapper implements Mapper<ItemModel> {
-  mapFrom(obj: videoObject): ItemModel {
+  mapFrom(obj: VideoObject): ItemModel {
     const video = new ItemModel();
     video.videoId = obj.id.videoId;
     video.thumbnail = obj.snippet.thumbnails.default.url;

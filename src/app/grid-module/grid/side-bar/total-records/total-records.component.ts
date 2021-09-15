@@ -1,5 +1,5 @@
 import { resources } from 'src/app/grid-module/global/resources';
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { IToolPanelParams } from '@ag-grid-community/core';
 import { ICellRendererParams } from '@ag-grid-enterprise/all-modules';
 
@@ -8,7 +8,7 @@ import { ICellRendererParams } from '@ag-grid-enterprise/all-modules';
   templateUrl: './total-records.component.html',
   styleUrls: ['./total-records.component.scss']
 })
-export class TotalRecordsComponent {
+export class TotalRecordsComponent implements OnDestroy {
   params: IToolPanelParams;
   count = 0;
   resources = resources;

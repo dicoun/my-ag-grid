@@ -15,7 +15,7 @@ export class LinkAgCellRendererComponent implements ICellRendererAngularComp {
   constructor(private entityService: EntityService) {
   }
 
-  agInit(params: ICellRendererParams) : void {
+  agInit(params: ICellRendererParams): void {
     this.title = params.value;
     this.url = this.entityService.getUrlById(params.data.videoId);
   }

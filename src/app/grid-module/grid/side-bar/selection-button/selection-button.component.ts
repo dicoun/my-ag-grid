@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { resources } from 'src/app/grid-module/global/resources';
 import { ColId } from 'src/app/grid-module/grid/constants/col-id';
-import { ICellRendererParams } from '@ag-grid-enterprise/all-modules';
+import { IStatusPanelParams } from '@ag-grid-enterprise/all-modules';
 
 @Component({
   selector: 'app-selection-button',
@@ -9,11 +9,11 @@ import { ICellRendererParams } from '@ag-grid-enterprise/all-modules';
   styleUrls: ['./selection-button.component.scss']
 })
 export class SelectionButtonComponent {
-  params: any;
+  params: IStatusPanelParams;
   tglButtonText = resources.hideSelection;
   show = true;
 
-  agInit(params: ICellRendererParams): void {
+  agInit(params: IStatusPanelParams): void {
     this.params = params;
   }
 

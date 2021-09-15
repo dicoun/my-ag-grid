@@ -25,13 +25,13 @@ describe('TextAgCellRendererComponent', () => {
 
   it('should check text type', () => {
     const div = fixture.debugElement.query(By.css('div'));
-    const text_type = typeof div.nativeElement.title;
-    expect(text_type).toEqual('string');
+    const textType = typeof div.nativeElement.title;
+    expect(textType).toEqual('string');
   });
 
   it('should check if text is not null', () => {
     const div = fixture.debugElement.query(By.css('div'));
     const text = div.nativeElement.title;
     expect(text).toBeDefined();
-  }); 
+  });
 });

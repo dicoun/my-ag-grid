@@ -25,13 +25,13 @@ describe('DateAgCellRendererComponent', () => {
 
   it('should check date type', () => {
     const div = fixture.debugElement.query(By.css('div'));
-    const div_type = typeof div.nativeElement.title;
-    expect(div_type).toEqual('string');
+    const divType = typeof div.nativeElement.title;
+    expect(divType).toEqual('string');
   });
 
   it('should check if date is not null', () => {
     const div = fixture.debugElement.query(By.css('div'));
     const date = div.nativeElement.title;
     expect(date).toBeDefined();
-  }); 
+  });
 });

@@ -66,19 +66,19 @@ describe('LinkAgCellRendererComponent', () => {
 
   it('should check link type', () => {
     const a = fixture.debugElement.query(By.css('a'));
-    const a_type = typeof a.nativeElement.href;
-    expect(a_type).toEqual('string');
+    const aType = typeof a.nativeElement.href;
+    expect(aType).toEqual('string');
   });
 
   it('should check if link is not null', () => {
     const a = fixture.debugElement.query(By.css('a'));
     const link = a.nativeElement.href;
     expect(link).toBeDefined();
-  }); 
+  });
 
   it('should check if title is not null', () => {
     const a = fixture.debugElement.query(By.css('a'));
     const title = a.nativeElement.title;
     expect(title).toBeDefined();
-  }); 
+  });
 });

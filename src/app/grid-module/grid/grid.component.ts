@@ -67,7 +67,7 @@ export class GridComponent implements OnInit {
   }
 
   getContextMenuItems(params: GetContextMenuItemsParams): (string | MenuItemDef)[] {
-    if(params.column.getColId() == ColId.Text){
+    if (params.column.getColId() === ColId.Text) {
       const url = this.entityService.getUrlById(params.node.data.videoId);
       return [
         'copy',

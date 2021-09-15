@@ -26,7 +26,7 @@ describe('ThumbnailAgCellRendererComponent', () => {
 
   it('should check src image type', () => {
     const img = fixture.debugElement.query(By.css('img'));
-    const src_img_type = typeof img.nativeElement.src;
-    expect(src_img_type).toEqual('string');
+    const srcImgType = typeof img.nativeElement.src;
+    expect(srcImgType).toEqual('string');
   });
 });

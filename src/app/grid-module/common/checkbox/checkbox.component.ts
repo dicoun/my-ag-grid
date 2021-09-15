@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class CheckboxComponent {
   @Input() selected: boolean;
-  @Output() valueChanged: EventEmitter<any> = new EventEmitter();
+  @Output() valueChanged = new EventEmitter<boolean>();
 
   onCheckboxValueChanged(checkedValue: boolean) {
     const isSelected = checkedValue;

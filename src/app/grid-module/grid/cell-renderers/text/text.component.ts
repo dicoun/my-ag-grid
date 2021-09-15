@@ -10,7 +10,7 @@ import { ICellRendererParams } from '@ag-grid-community/core';
 export class TextAgCellRendererComponent implements ICellRendererAngularComp {
   text: string;
 
-  agInit(params: ICellRendererParams) : void {
+  agInit(params: ICellRendererParams): void {
     this.text = params.value;
   }
   refresh(): boolean {

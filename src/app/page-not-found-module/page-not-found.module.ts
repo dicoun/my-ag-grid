@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
-import { PageNotFoundComponent } from './page-not-found-module/page-not-found.component';
+import { PageNotFoundComponent } from './page-not-found.component';
 
 @NgModule({
   declarations: [

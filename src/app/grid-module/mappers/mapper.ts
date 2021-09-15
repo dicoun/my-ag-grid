@@ -1,5 +1,5 @@
-import { videoObject } from './videoObject';
+import { VideoObject } from './video.object';
 
 export interface Mapper<T> {
-  mapFrom(obj: videoObject): T;
+  mapFrom(obj: VideoObject): T;
 }

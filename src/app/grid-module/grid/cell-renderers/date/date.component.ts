@@ -10,7 +10,7 @@ import { ICellRendererAngularComp } from '@ag-grid-community/angular';
 export class DateAgCellRendererComponent implements ICellRendererAngularComp {
   date: string;
 
-  agInit(params: ICellRendererParams) : void {
+  agInit(params: ICellRendererParams): void {
     this.date = params.value ? new Date(params.value).toLocaleDateString() : '';
   }
   refresh(): boolean {
